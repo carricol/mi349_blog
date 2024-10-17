@@ -9,14 +9,36 @@
     <header>
         <h1>Lauren's Blog</h1>
         <p>My thoughts on new music releases</p>
+        <nav>
+            <ul>
+                <li> <a title="Link to Blog" href="/index.html">Blog</a></li>
+                <li> <a title="Link to About" href="/about.html">About</a></li>
+                <li><a title="Link to Contact" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li> <a title="Link to Blog" href="/index.html">Blog</a></li>
-            <li> <a title="Link to About" href="/about.html">About</a></li>
-            <li><a title="Link to Contact" href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    
+    <section>
+        <form>
+            <label>
+                Contact Us: <br>
+            </label>
+            <label>Name</label>
+            <input type="text"> <br>
+            <label>Email</label>
+            <input type="text"> <br>
+            <label>Reason for Contact</label>
+            <select id="reason">
+                <option value="Saying Hi!">Saying hi!</option>
+                <option value="Album Suggestion">Album Suggestion</option>
+                <option value="Interesed in an Interview">Interested in an interview</option>
+                <option value="Issue with the Site">Issue with the Site</option>
+                <option value="Other">Other</option>
+            </select> <br>
+            <label>Comments</label> <br>
+            <textarea id="Comments" name="Comments" rows="4" cols="50">
+            </textarea> <br>
+            <button>Submit</button>
+        </form>
+    </section>
 </body>
 </html>
