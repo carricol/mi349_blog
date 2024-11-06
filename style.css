@@ -19,14 +19,21 @@ header {
     background: #fff;
 }
 
-section {
-
+#Picture_of_Me {
+    width: 300px;
+    height: 400px;
+    float: left;
+    padding: 25px;
 }
 
-article {
 
+article:nth-of-type(1) {
+    flex: 10000px;
 }
 
+article:nth-of-type(2){
+    flex: 10000px;
+}
 
 h1 {
     font-size: 3em;
@@ -49,10 +56,13 @@ p {
 
 #blog {
     border-top: 1px dotted #ccc;
+    display: flex;
 }
 
 .blog-post {
     border-bottom: 1px dotted #ccc;
+    padding: 20px;
+    margin: 20px;
 }
 
 .byline {
@@ -82,7 +92,7 @@ button {
 
 
 .the_facts {
-
+    margin-left: 30px;
 }
 
 .about_in_depth{
