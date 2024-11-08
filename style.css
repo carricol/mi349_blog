@@ -20,10 +20,8 @@ header {
 }
 
 #Picture_of_Me {
-    position: static;
-    top: 300px;
-    width: 300px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
 #about-me {
@@ -32,37 +30,35 @@ header {
     align-items: center;
     padding: 10px;
     margin: 10px;
+    background: #ECECEC;
 }
 
 .about-me{
     flex-grow: 1;
     margin: 20px;
     padding: 10px;
-}
-
-.About_In_Depth {
-    flex-grow: 4;
-    margin: 20px;
-    padding: 10px;
-}   
-
-.The_Facts {
-    flex-grow: 1;
-    margin: 20px;
-    padding: 10px;
+    border: 2px solid black; 
+    background: #FAFAFA;
+    color: black;
     
 }
 
-.About_In_Depth:nth-child(1) {
-    flex-grow: 4;
+.about-me:nth-of-type(1){
+    flex: 1;
+}
+.about-me:nth-of-type(2){
+    flex: 2;
+}
+.about-me:nth-of-type(3){
+    flex: 1;
 }
 
 .blog-post:nth-of-type(1) {
-    flex: 10000px;
+    flex: 1;
 }
 
 .blog-post:nth-of-type(2){
-    flex: 10000px;
+    flex: 1;
 }
 
 h1 {
@@ -102,10 +98,11 @@ table td {
 }
 
 .wrapper {
-    background-color: #ccc;
+    background-color: #ECECEC;
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     border-radius: 3px;
+
 }
 
 .form-row {
@@ -144,6 +141,8 @@ button {
     flex-direction: column;
     justify-content: space-between;
     min-height: 15px;
+    background: #ECECEC;
+    color: black;
     border: 2px solid black;
     padding: .5em;
 }
