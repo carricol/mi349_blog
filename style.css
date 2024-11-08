@@ -55,6 +55,7 @@ p {
 }
 
 #blog {
+    text-align: center;
     border-top: 1px dotted #ccc;
     display: flex;
 }
@@ -65,17 +66,33 @@ p {
     margin: 20px;
 }
 
-.byline {
-    
+
+table td {
+    border-top: 1px solid black;
 }
 
-table {
-
+.wrapper {
+    background-color: #ccc;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
 }
 
-form {
-
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
 }
+
+.form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1
+}
+
+.form-row > input{
+    flex: 2
+}
+
 div.navigation{
     text-align: center;
 }
@@ -87,26 +104,20 @@ ul.Pages {
 }
 
 button {
+    color: white;
+    background: black;
 
 }
 
-
-.the_facts {
-    margin-left: 30px;
+.album-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 15px;
+    border: 2px solid black;
+    padding: .5em;
 }
 
-.about_in_depth{
-
-}
-
-a[href="/index.html"] {
-
-}
-
-a[href="/about.html"]{
-
-}
-
-a[href="/index.html"]{
-
+.box > * {
+    border-bottom: 2px solid black;
 }

@@ -26,25 +26,37 @@
     </header>
     <section>
         <form>
-            <label>
-                Contact Us: <br>
-            </label>
-            <label>Name</label>
-            <input type="text"> <br>
-            <label>Email</label>
-            <input type="text"> <br>
-            <label>Reason for Contact</label>
-            <select id="reason">
-                <option value="Saying Hi!">Saying hi!</option>
-                <option value="Album Suggestion">Album Suggestion</option>
-                <option value="Interesed in an Interview">Interested in an interview</option>
-                <option value="Issue with the Site">Issue with the Site</option>
-                <option value="Other">Other</option>
-            </select> <br>
-            <label>Comments</label> <br>
-            <textarea id="Comments" name="Comments" rows="4" cols="50">
-            </textarea> <br>
-            <button>Submit</button>
+            <ul class = "wrapper">
+                <h3>
+                    Contact Us:
+                </h3>
+                <li class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </li>
+                <li class = "form-row">
+                    <label for="email">Email</label>
+                    <input type="text"> 
+                </li>
+                <li class="form-row">
+                    <label for="reason">Reason for Contact</label>
+                    <select id="reason">
+                        <option value="Saying Hi!">Saying hi!</option>
+                        <option value="Album Suggestion">Album Suggestion</option>
+                        <option value="Interesed in an Interview">Interested in an interview</option>
+                        <option value="Issue with the Site">Issue with the Site</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </li>
+                <li class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea id="Comments" name="Comments" rows="4" cols="50">
+                    </textarea>
+                </li>
+                <li class="form-row">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
         </form>
     </section>
 </body>
