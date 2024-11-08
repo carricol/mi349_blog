@@ -20,18 +20,48 @@ header {
 }
 
 #Picture_of_Me {
+    position: static;
+    top: 300px;
     width: 300px;
     height: 400px;
-    float: left;
-    padding: 25px;
 }
 
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
 
-article:nth-of-type(1) {
+.about-me{
+    flex-grow: 1;
+    margin: 20px;
+    padding: 10px;
+}
+
+.About_In_Depth {
+    flex-grow: 4;
+    margin: 20px;
+    padding: 10px;
+}   
+
+.The_Facts {
+    flex-grow: 1;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.About_In_Depth:nth-child(1) {
+    flex-grow: 4;
+}
+
+.blog-post:nth-of-type(1) {
     flex: 10000px;
 }
 
-article:nth-of-type(2){
+.blog-post:nth-of-type(2){
     flex: 10000px;
 }
 
@@ -118,9 +148,6 @@ button {
     padding: .5em;
 }
 
-.The_Facts {
-    padding: 1em;
-}
 
 .box > * {
     border-bottom: 2px solid black;
